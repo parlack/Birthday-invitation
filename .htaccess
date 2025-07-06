@@ -1,0 +1,27 @@
+# Protect PHP files from outside access
+Options -Indexes
+
+# Protect files like config.php
+<Files "config.php">
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Enable clean URLs (optional)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Redirect to index.php with guest parameter
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ index.php?guest=$1 [L,QSA]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
