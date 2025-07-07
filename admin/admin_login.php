@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
         
         <div class="return-link">
-            <a href="index.php">Return to Invitation</a>
+            <a href="../public/index.php">Return to Invitation</a>
         </div>
     </div>
 </body>

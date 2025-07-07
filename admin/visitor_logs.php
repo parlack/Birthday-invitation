@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-require_once 'config.php';
+require_once '../config/config.php';
 
 // Simple authentication check
 session_start();

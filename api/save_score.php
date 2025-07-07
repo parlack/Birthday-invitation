@@ -13,7 +13,7 @@ ini_set('display_errors', 0);
 header('Content-Type: application/json');
 
 try {
-    require_once 'config.php';
+    require_once '../config/config.php';
     
     // Verificar que sea una petición POST
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

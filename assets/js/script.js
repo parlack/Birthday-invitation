@@ -174,7 +174,7 @@ function initRSVPButtons() {
                 formData.append('status', status);
                 
                 // Enviar solicitud AJAX
-                fetch('rsvp_ajax.php', {
+                fetch('../api/rsvp_ajax.php', {
                     method: 'POST',
                     body: formData
                 })
@@ -254,7 +254,7 @@ function initChangeRSVPLink() {
                         <span class="prompt-text">¿JALAS?</span>
                     </div>
                     
-                    <form id="rsvp-form" action="rsvp_ajax.php" method="post">
+                    <form id="rsvp-form" action="../api/rsvp_ajax.php" method="post">
                         <input type="hidden" name="guest_id" value="${guestId}">
                         <input type="hidden" name="invitation_code" value="${invitationCode}">
                         
@@ -438,7 +438,7 @@ function setupMobileOptimizations() {
                     formData.append('status', status);
                     
                     // Enviar solicitud AJAX
-                    fetch('rsvp_ajax.php', {
+                    fetch('../api/rsvp_ajax.php', {
                         method: 'POST',
                         body: formData
                     })
@@ -518,7 +518,7 @@ function setupMobileOptimizations() {
                             <span class="prompt-text">¿JALAS?</span>
                         </div>
                         
-                        <form id="rsvp-form" action="rsvp_ajax.php" method="post">
+                        <form id="rsvp-form" action="../api/rsvp_ajax.php" method="post">
                             <input type="hidden" name="guest_id" value="${guestId}">
                             <input type="hidden" name="invitation_code" value="${invitationCode}">
                             

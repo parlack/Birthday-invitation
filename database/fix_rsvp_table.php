@@ -7,7 +7,7 @@ echo "<h1>Corrección de la Tabla RSVP</h1>";
 
 try {
     // Conectar a la base de datos
-    require_once 'config.php';
+    require_once '../config/config.php';
     echo "<div style='background:#d4edda;border:1px solid #c3e6cb;padding:10px;margin:10px;'>✅ Conexión a la base de datos establecida</div>";
     
     // Verificar la estructura actual de la tabla

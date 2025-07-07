@@ -32,7 +32,7 @@ if (is_writable(__DIR__)) {
 
 // Include database connection
 debug_log("Intentando cargar config.php...");
-require_once 'config.php';
+require_once '../config/config.php';
 
 // Verificar la conexión a la base de datos
 if (isset($conn) && $conn instanceof PDO) {

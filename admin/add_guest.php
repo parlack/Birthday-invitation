@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-require_once 'config.php';
+require_once '../config/config.php';
 
 try {
     // First check if the invitation_code already exists

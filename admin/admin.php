@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-require_once 'config.php';
+require_once '../config/config.php';
 
 // Basic authentication (you should improve this in production)
 $username = "usuario";
@@ -75,7 +75,7 @@ if ($authenticated) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Invitación Galáctica</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <style>
         .admin-container {
             background: rgba(13, 15, 44, 0.95);

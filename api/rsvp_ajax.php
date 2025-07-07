@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0); // No mostrar errores en la respuesta JSON
 
 // Include database connection
-require_once 'config.php';
+require_once '../config/config.php';
 
 // Log para depuración
 function log_debug($message) {

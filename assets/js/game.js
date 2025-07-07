@@ -1033,7 +1033,7 @@ function showLeaderboard() {
     console.log('Obteniendo ranking de puntuaciones...');
     
     // Obtener puntuaciones del servidor
-    fetch('get_leaderboard.php')
+    fetch('../api/get_leaderboard.php')
     .then(response => {
         console.log('Respuesta recibida:', response);
         return response.json();
@@ -1177,7 +1177,7 @@ function saveScore(score, name = null, id = null) {
     formData.append('guest_id', playerId);
     
     // Enviar puntuación
-    fetch('save_score.php', {
+    fetch('../api/save_score.php', {
         method: 'POST',
         body: formData
     })

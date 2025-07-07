@@ -12,7 +12,7 @@ ini_set('display_errors', 0);
 header('Content-Type: application/json');
 
 try {
-    require_once 'config.php';
+    require_once '../config/config.php';
     
     // Conectar a la base de datos - CORREGIDO: usar nombres correctos de variables
     $pdo = new PDO("mysql:host=$host;dbname=$database;charset=utf8mb4", $username, $password);
